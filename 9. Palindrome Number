@@ -1,0 +1,17 @@
+//9. Palindrome Number
+class Solution {
+    public boolean isPalindrome(int x) {
+        int t=0,p=x;
+        while(x>0){
+            int r=x%10;
+            x=x/10;
+            t=t*10+r;
+        }
+        if (t==p){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+}
